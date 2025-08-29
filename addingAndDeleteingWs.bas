@@ -20,8 +20,8 @@ Sub deleteWorksheetWithAName(wsName As String)
         If LCase(ws.Name) = LCase(wsName) Then
             Application.DisplayAlerts = False
                 ws.Delete
-                Exit Sub
             Application.DisplayAlerts = True
+            Exit Sub
         End If
     Next ws
 
